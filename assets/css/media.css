@@ -1,0 +1,139 @@
+@media (min-width:1600px) {}
+
+@media (min-width:1500px) {}
+
+@media (min-width:1400px) {
+    .menu {
+        border: 1px solid rgb(45 46 47) !important;
+        position: fixed;
+        right: 60px;
+        top: 25%;
+        border-radius: 50px;
+        padding: 16px 10px;
+        display: block !important;
+    }
+
+    aside {
+        background-color: #212223;
+        position: fixed;
+        left: 40px;
+        top: 15%;
+        border-radius: 20px;
+        clip-path: url(#my-clip-path);
+    }
+
+    .box {
+        margin-right: 90px;
+    }
+
+    .line1 {
+        height: 100vh;
+        border-right: 1px dashed var(--line-color) !important;
+        position: fixed;
+        left: 27%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .line2 {
+        height: 100vh;
+        border-right: 1px dashed var(--line-color) !important;
+        position: fixed;
+        left: 47%;
+        top: 0;
+        z-index: -1;
+
+    }
+
+    .line3 {
+        height: 100vh;
+        border-right: 1px dashed var(--line-color) !important;
+        position: fixed;
+        left: 67%;
+        top: 0;
+        z-index: -1;
+    }
+
+    .line4 {
+        height: 100vh;
+        border-right: 1px dashed var(--line-color) !important;
+        position: fixed;
+        left: 87%;
+        top: 0;
+        z-index: -1;
+    }
+
+}
+
+@media (min-width:1320px) {}
+
+@media (min-width:992px) {
+    .card-item h6 {
+        font-size: 24px;
+        margin-block: 20px 16px;
+    }
+
+    .card-item p {
+        font-size: 16px;
+    }
+
+    .design-text {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #999999;
+        font-size: 72px;
+        font-weight: 700;
+        transition: 0.2s all linear;
+    }
+
+    .card-item {
+        padding: 32px;
+        border: 1px solid rgb(45 46 47) !important;
+        border-radius: 16px;
+        transition: 0.2s all linear;
+    }
+}
+
+@media (min-width:768px) {
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    .grid-item {
+        display: grid;
+        grid-template-columns: 280px 150px auto;
+        border: none !important;
+        padding: 0px;
+        border-radius: 15px;
+
+    }
+
+    .mb-48 {
+        margin-bottom: 48px;
+    }
+
+}
+
+@media (min-width:576px) {
+    .contact-info li span {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+    .contact-info li {
+        display: grid;
+        grid-template-columns: 100px 30px auto;
+    }
+
+    .animate-setting {
+        top: -1px;
+        left: -28%;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #fff !important;
+        background-color: var(--box-color);
+    }
+}
