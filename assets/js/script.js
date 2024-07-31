@@ -33,7 +33,7 @@ $(document).ready(function () {
         $(':root').css('--box-color', 'white');
         $('.sun').css('background-color', '#f0f2f5');
         $(':root').css('--text-color', '#000');
-        
+
     })
     $('.moon').on('click', function () {
         $('body').removeClass('primary-background-color');
@@ -60,17 +60,25 @@ $(document).ready(function () {
         $(':root').css('--text-color', '#fff');
     });
 
-    $(window).scroll(function(){
-        if(scrollY > 1000){
+    $(window).scroll(function () {
+        if (scrollY > 1000) {
             $('.bottom-top').fadeIn();
-        }else{
-            $('.bottom-top').fadeOut();     
+        } else {
+            $('.bottom-top').fadeOut();
         }
     });
-    
-    $('.bottom-top').on('click',function(){
-        $('html').animate({scrollTop: 0}, 50);
+
+    $('.bottom-top').on('click', function () {
+        $('html').animate({ scrollTop: 0 }, 50);
     });
+
+
+    if ($(window).width() < 1400) {
+        $("body").attr("data-bs-target", "#navbar-example3");
+    } else {
+        $("body").attr("data-bs-target", "#navbar-example2");
+    }
+
 })
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
