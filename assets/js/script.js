@@ -72,14 +72,15 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: 0 }, 50);
     });
 
+    
 
-    if ($(window).width() < 1400) {
-        $("body").attr("data-bs-target", "#navbar-example3");
-    } else {
-        $("body").attr("data-bs-target", "#navbar-example2");
-    }
-
+        if ($(window).width() < 1400) {
+            $("body").attr("data-bs-target", "#navbar-example3");
+        } else {
+            $("body").attr("data-bs-target", "#navbar-example2");
+        }
+    
 })
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
