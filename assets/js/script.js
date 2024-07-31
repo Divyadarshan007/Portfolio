@@ -32,7 +32,8 @@ $(document).ready(function () {
         $(':root').css('--line-color', 'rgba(0, 0, 0, 0.144)');
         $(':root').css('--box-color', 'white');
         $('.sun').css('background-color', '#f0f2f5');
-
+        $(':root').css('--text-color', '#000');
+        
     })
     $('.moon').on('click', function () {
         $('body').removeClass('primary-background-color');
@@ -56,6 +57,21 @@ $(document).ready(function () {
         $(':root').css('--line-color', 'rgba(255, 255, 255, 0.158)');
         $(':root').css('--box-color', '#212223');
         $('.sun').css('background-color', 'transparent');
-    })
+        $(':root').css('--text-color', '#fff');
+    });
 
+    $(window).scroll(function(){
+        if(scrollY > 1000){
+            $('.bottom-top').fadeIn();
+        }else{
+            $('.bottom-top').fadeOut();     
+        }
+    });
+    
+    $('.bottom-top').on('click',function(){
+        $('html').animate({scrollTop: 0}, 50);
+    });
 })
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

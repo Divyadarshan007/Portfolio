@@ -4439,9 +4439,8 @@ fieldset:disabled .btn {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: var(--bs-nav-pills-link-active-bg)
+.nav-pills .show>.nav-link{
+    border-radius: 50%;
 }
 
 .nav-underline {
@@ -4472,27 +4471,27 @@ fieldset:disabled .btn {
 .nav-fill .nav-item,
 .nav-fill>.nav-link {
     flex: 1 1 auto;
-    text-align: center
+    text-align: center;
 }
 
 .nav-justified .nav-item,
 .nav-justified>.nav-link {
     flex-basis: 0;
     flex-grow: 1;
-    text-align: center
+    text-align: center;
 }
 
 .nav-fill .nav-item .nav-link,
 .nav-justified .nav-item .nav-link {
-    width: 100%
+    width: 100%;
 }
 
 .tab-content>.tab-pane {
-    display: none
+    display: none;
 }
 
 .tab-content>.active {
-    display: block
+    display: block;
 }
 
 .navbar {

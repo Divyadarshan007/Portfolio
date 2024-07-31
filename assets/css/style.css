@@ -17,6 +17,8 @@ body {
     --theme-color: #fff;
     --line-color:rgba(255, 255, 255, 0.158) ;
     --box-color:#212223;
+    --text-color: #fff;
+    --font-primary-color: #00bc91;
 }
 
 
@@ -38,8 +40,7 @@ body {
 }
 
 header {
-    background-color: rgb(255 255 255 / 0.1);
-    height: 60px;
+    background-color: var(--box-color);
     width: 100%;
     backdrop-filter: blur(12px);
     position: fixed;
@@ -50,9 +51,16 @@ header {
 }
 
 .offcanvas-button svg {
-    fill: #fff;
+    fill: var(--text-color);
     height: 20px;
-    width: 20px;
+    width: 20px; 
+}
+.offcanvas-button button{
+    background-color: var(--box-color);
+    border-radius: 50%;
+    border: 1px solid var(--line-color) !important;
+    height: 50px;
+    width: 50px;
 }
 
 .offcanvas-button .sidebar-open {
@@ -60,9 +68,9 @@ header {
 }
 
 .sidebar {
-    width: 180px;
+    width: 220px;
     height: 100vh;
-    background-color: #212223;
+    background-color: var(--box-color);
     position: fixed;
     top: 0;
     right: 0;
@@ -92,6 +100,7 @@ header {
 }
 
 aside {
+    margin-top: 120px !important;
     width: 320px;
     background-color: #212223;
     border-radius: 20px;
@@ -927,3 +936,43 @@ aside {
     margin-top: 50px !important;
    
 }
+.bottom-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+.bottom-top span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--box-color);
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--box-color);
+    --bs-tooltip-color: var(--text-color);
+  }
+  .nav-link.active i{
+    color: #00bc91 !important;
+  }
+  .nav-link.active{
+    color: #00bc91 !important;
+  }
+ 
+  .sidebar-body ul{
+    margin-top: 20px;
+  }
+  .sidebar-body ul li{
+    padding: 10px 0;
+  }
+  .social-links span{
+    padding: 0 5px 0 0;
+  }
+  .sidebar-menu li a i{
+    margin-right: 10px;
+  }
+  
+
