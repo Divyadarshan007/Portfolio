@@ -15,8 +15,8 @@ body {
 
 :root {
     --theme-color: #fff;
-    --line-color:rgba(255, 255, 255, 0.158) ;
-    --box-color:#212223;
+    --line-color: rgba(255, 255, 255, 0.158);
+    --box-color: #212223;
     --text-color: #fff;
     --font-primary-color: #00bc91;
 }
@@ -53,9 +53,10 @@ header {
 .offcanvas-button svg {
     fill: var(--text-color);
     height: 20px;
-    width: 20px; 
+    width: 20px;
 }
-.offcanvas-button button{
+
+.offcanvas-button button {
     background-color: var(--box-color);
     border-radius: 50%;
     border: 1px solid var(--line-color) !important;
@@ -231,7 +232,7 @@ aside {
 
 .line2 {
     height: 100vh;
-    border-right: 1px dashed var(--line-color) ;
+    border-right: 1px dashed var(--line-color);
     position: fixed;
     left: 40%;
     top: 0;
@@ -269,7 +270,7 @@ aside {
 
 .line4 {
     height: 100vh;
-    border-right: 1px dashed var(--line-color) ;
+    border-right: 1px dashed var(--line-color);
     position: fixed;
     left: 80%;
     top: 0;
@@ -498,8 +499,9 @@ aside {
 
 }
 
-.right-image img{
+.right-image img {
     filter: grayscale(40%);
+    filter: drop-shadow(7px 10px 4px #00bc91);
 }
 
 .margin-5rem {
@@ -738,7 +740,8 @@ aside {
     display: inline-block;
     transition: 0.3s all linear;
 }
-.blog-info a:hover{
+
+.blog-info a:hover {
     color: #fff;
     background-color: #00bc91;
 }
@@ -787,6 +790,8 @@ aside {
     border-radius: 30px;
     display: inline-block;
 }
+
+
 
 .map {
     padding: 20px;
@@ -934,15 +939,17 @@ aside {
 
 .coment-form {
     margin-top: 50px !important;
-   
+
 }
-.bottom-top{
+
+.bottom-top {
     position: fixed;
     bottom: 10px;
     right: 10px;
     display: none;
 }
-.bottom-top span{
+
+.bottom-top span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -951,28 +958,32 @@ aside {
     height: 50px;
     background-color: var(--box-color);
 }
+
 .custom-tooltip {
     --bs-tooltip-bg: var(--box-color);
     --bs-tooltip-color: var(--text-color);
-  }
-  .nav-link.active i{
-    color: #00bc91 !important;
-  }
-  .nav-link.active{
-    color: #00bc91 !important;
-  }
- 
-  .sidebar-body ul{
-    margin-top: 20px;
-  }
-  .sidebar-body ul li{
-    padding: 10px 0;
-  }
-  .social-links span{
-    padding: 0 5px 0 0;
-  }
-  .sidebar-menu li a i{
-    margin-right: 10px;
-  }
-  
+}
 
+.nav-link.active i {
+    color: #00bc91 !important;
+}
+
+.nav-link.active {
+    color: #00bc91 !important;
+}
+
+.sidebar-body ul {
+    margin-top: 20px;
+}
+
+.sidebar-body ul li {
+    padding: 10px 0;
+}
+
+.social-links span {
+    padding: 0 5px 0 0;
+}
+
+.sidebar-menu li a i {
+    margin-right: 10px;
+}
